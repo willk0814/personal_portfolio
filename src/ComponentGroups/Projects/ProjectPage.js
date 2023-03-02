@@ -55,7 +55,7 @@ export default function ProjectPage() {
                     <button className='submitMessageButton'>Repo</button>
                   </a>
                 </div>
-                <video height={190} autoPlay={true} loop={true} className='alignDemo'>
+                <video height={190} autoPlay={true} loop={true} className='alignDemo' muted>
                   <source src={AppDemo} type='video/mp4' />
                 </video>
               </div>
@@ -96,7 +96,7 @@ export default function ProjectPage() {
           </div>
 
           {/* Project - 2048 Game */}
-          <div 
+          {/* <div 
             style={{
               width: pythonGameExpanded ? '80vh' : '55vh',
               height: pythonGameExpanded ? '20vh' : '5vh'
@@ -115,10 +115,10 @@ export default function ProjectPage() {
               <p>accomplishments</p>
               <p>accomplishments</p>
             </div>
-          </div>
+          </div> */}
             
           {/* Project - Path Finding */}
-          <div 
+          {/* <div 
             style={{
               width: pathFindingExpanded ? '80vh' : '55vh',
               height: pathFindingExpanded ? '20vh' : '5vh'
@@ -137,7 +137,7 @@ export default function ProjectPage() {
                 <p>accomplishments</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
     </div>
   )
