@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/personal_portfolio/static/css/main.e4f3da91.css",
+    "main.js": "/personal_portfolio/static/js/main.5be40b4b.js",
+    "static/js/787.749b4a44.chunk.js": "/personal_portfolio/static/js/787.749b4a44.chunk.js",
+    "static/media/Koenig_Resume_2023.pdf": "/personal_portfolio/static/media/Koenig_Resume_2023.5358ed6f2f59d4a72240.pdf",
+    "index.html": "/personal_portfolio/index.html",
+    "main.e4f3da91.css.map": "/personal_portfolio/static/css/main.e4f3da91.css.map",
+    "main.5be40b4b.js.map": "/personal_portfolio/static/js/main.5be40b4b.js.map",
+    "787.749b4a44.chunk.js.map": "/personal_portfolio/static/js/787.749b4a44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4f3da91.css",
+    "static/js/main.5be40b4b.js"
+  ]
+}
