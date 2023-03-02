@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import  AppDemo from '../Assets/DeviceControllerDemo.MP4'
+import sortingDemo from '../Assets/sortingVisualizer.MP4'
 
 import '../PageStyling/PageStyles.css'
 
@@ -35,7 +37,7 @@ export default function ProjectPage() {
           <div 
             style={{
               width: appExpanded ? '80vh' : '55vh',
-              height: appExpanded ? '20vh' : '5vh'
+              height: appExpanded ? '27vh' : '5vh'
             }}
             className='expandable'
             onMouseEnter={toggleApp}
@@ -46,10 +48,17 @@ export default function ProjectPage() {
                 display: appExpanded ? true : 'none'
               }}
               className='expandableBox'>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
+              <div className='projectExpandable'>
+                <div>
+                  <p>This is the React Native application that I built while working at the Sparks Lab.  It was used to connect to research devices, initiate tests via bluetooth, and recieve and process data.</p>
+                  <a href='https://github.com/willk0814/DeviceControllerApp'>
+                    <button className='submitMessageButton'>Repo</button>
+                  </a>
+                </div>
+                <video height={190} autoPlay={true} loop={true} className='alignDemo'>
+                  <source src={AppDemo} type='video/mp4' />
+                </video>
+              </div>
             </div>
           </div>
           
@@ -57,7 +66,7 @@ export default function ProjectPage() {
           <div 
             style={{
               width: sortingExpanded ? '80vh' : '55vh',
-              height: sortingExpanded ? '20vh' : '5vh'
+              height: sortingExpanded ? '27vh' : '5vh'
             }}
             className='expandable'
             onMouseEnter={toggleSorting}
@@ -68,10 +77,21 @@ export default function ProjectPage() {
                 display: sortingExpanded ? true : 'none'
               }}
               className='expandableBox'>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
+              <div className='projectExpandable'>
+                <div>
+                  <p>A react project to demonstrate the comparisons made by different sorting algorithms when sorting an array</p>
+                  <a href='https://github.com/willk0814/sorting_visualizer' target='_blank'>
+                    <button className='submitMessageButton' style={{marginRight: '10px'}}>
+                      Repo</button>
+                  </a>
+                  <a href='https://willk0814.github.io/sorting_visualizer/' target='_blank'>
+                    <button className='submitMessageButton'>Site</button>
+                  </a>
+                </div>
+                <video width={500} height={190} autoPlay={true} loop={true} className='alignDemo'>
+                  <source src={sortingDemo} type='video/mp4' />
+                </video>
+              </div>
             </div>
           </div>
 
@@ -109,13 +129,13 @@ export default function ProjectPage() {
             <p>Path Finding Visualizer</p>
             <div 
               style={{
-                display: pathFindingExpanded ? true : 'none'
+                display: pathFindingExpanded ? true : 'none',
               }}
               className='expandableBox'>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
+              <div className='projectExpandable'>
+                <p>accomplishments</p>
+                <p>accomplishments</p>
+              </div>
             </div>
           </div>
         </div>

@@ -19,6 +19,8 @@ export default function WorkExperiencePage() {
       <div
         className='contentContainer'>
           <h1 className='titleText'>Work Experience</h1>
+
+          {/* Sparks Lab */}
           <div 
             style={{
               width: sparksExpanded ? '80vh' : '55vh',
@@ -27,18 +29,18 @@ export default function WorkExperiencePage() {
             className='expandable'
             onMouseEnter={toggleSparks}
             onMouseLeave={toggleSparks}>
-            <p>Sparks Lab</p>
+            <p>Sparks Lab - Software Engineer</p>
             <div 
               style={{
                 display: sparksExpanded ? true : 'none'
               }}
               className='expandableBox'>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
+              <p>Led the developement of a React Native device controller application capable of connecting with a research device, running tests, and recieving and processing data to be used in the lab and delivered to Fortune 500 client</p>
+              <p>App usage reduced research testing by 33%</p>
             </div>
           </div>
+
+          {/* Viinko */}
           <div 
             style={{
               width: viinkoExpanded ? '80vh' : '55vh',
@@ -47,16 +49,14 @@ export default function WorkExperiencePage() {
             className='expandable'
             onMouseEnter={toggleViinko}
             onMouseLeave={toggleViinko}>
-            <p>Viinko</p>
+            <p>Viinko - Software Engineer Intern</p>
             <div 
               style={{
                 display: viinkoExpanded ? true : 'none'
               }}
               className='expandableBox'>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
-              <p>accomplishments</p>
+              <p>Developed a chrome extension using JavaScript and HTML to be used daily by approximately 24000 students through two schools</p>
+              <p>Chrome extension became a core part of the product allowing students to move their work directly from Google Classroom to Viinko Calendar</p>
             </div>
           </div>
         </div>
