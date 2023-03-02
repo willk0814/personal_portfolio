@@ -88,7 +88,7 @@ export default function ProjectPage() {
                     <button className='submitMessageButton'>Site</button>
                   </a>
                 </div>
-                <video width={500} height={190} autoPlay={true} loop={true} className='alignDemo'>
+                <video width={285} autoPlay={true} loop={true} className='alignDemo' muted>
                   <source src={sortingDemo} type='video/mp4' />
                 </video>
               </div>
