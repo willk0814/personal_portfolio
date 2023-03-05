@@ -70,7 +70,7 @@ export default function Navbar() {
                 </div>
             </li>
 
-            <li 
+            {/* <li 
                 className='navbarMenuItem'
                 onMouseEnter={toggleContactUnderlined}
                 onMouseLeave={toggleContactUnderlined}>
@@ -79,7 +79,7 @@ export default function Navbar() {
                 </Link>
                 <div className='underline' style={{width: contactUnderlined ? '100%' : '0%'}}> 
                 </div>
-            </li>
+            </li> */}
         </ul>
 
         {/* Links on the side */}
@@ -111,14 +111,14 @@ export default function Navbar() {
                     </div>
                     </a>
                 </li>
-                <li className='socialListIcon'>
+                {/* <li className='socialListIcon'>
                     <Link to='contact' smooth={true} duration={500}>
                         <div className='socialIcon'>
                             <p className='iconText'>Contact Me</p>
                             <HiOutlineMail size={45} color='beige' />
                         </div>
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </div>
     </div>

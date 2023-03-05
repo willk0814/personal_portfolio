@@ -114,10 +114,9 @@ export default function EducationPage() {
               style={{
                 display: skillsExpanded ? true : 'none'
               }}
-              className='expandableBox skillsExpandable'>
-              <SiPython size={40}/>
-              <SiReact size={40}/>
-              <SiJupyter size={40}/>
+              className='expandableBox'>
+                <p>Languages and Frameworks: Python, Java, Javascript, C++, React, React Native, HTML, CSS, NumPy, PyTorch, matplotlib, SQL</p>
+                <p>Project Management Skills and Tools: Git, Jira, Asana</p>
             </div>
           </div>
         </div>
