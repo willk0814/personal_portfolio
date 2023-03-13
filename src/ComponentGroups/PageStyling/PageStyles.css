@@ -98,11 +98,36 @@
     margin-right: 5%;
 }
 
+.subList {
+    list-style-type: none;
+    margin-left: -20px;
+    margin-block: 0px;
+}
+
+.subListItem {
+    padding-block: 3px;
+}
+
+.subSectTitle {
+    display: inline;
+    text-decoration: underline;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 /* Headers for each section */
 .titleText {
     font-size: 4rem;
     margin-block: 0px;
     font-weight: 300;
+    padding-block: 0px;
+}
+
+.subTitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 3vh;
+    margin-bottom: 0px;
 }
 
 /* Expandable element container */
