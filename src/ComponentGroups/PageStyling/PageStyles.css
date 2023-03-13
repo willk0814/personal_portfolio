@@ -110,7 +110,7 @@
 
 .subSectTitle {
     display: inline;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 1.25rem;
     font-weight: 300;
 }
