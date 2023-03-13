@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/personal_portfolio/static/css/main.0b1d1f2c.css",
-    "main.js": "/personal_portfolio/static/js/main.f8143498.js",
+    "main.js": "/personal_portfolio/static/js/main.0a9bac68.js",
     "static/js/787.749b4a44.chunk.js": "/personal_portfolio/static/js/787.749b4a44.chunk.js",
-    "static/media/DeviceControllerDemo.MP4": "/personal_portfolio/static/media/DeviceControllerDemo.3f3e5122e6ef31804fa7.MP4",
-    "static/media/sortingVisualizer.MP4": "/personal_portfolio/static/media/sortingVisualizer.0e86edd5459294be5f90.MP4",
     "static/media/Koenig_Resume_2023.pdf": "/personal_portfolio/static/media/Koenig_Resume_2023.5358ed6f2f59d4a72240.pdf",
     "index.html": "/personal_portfolio/index.html",
     "main.0b1d1f2c.css.map": "/personal_portfolio/static/css/main.0b1d1f2c.css.map",
-    "main.f8143498.js.map": "/personal_portfolio/static/js/main.f8143498.js.map",
+    "main.0a9bac68.js.map": "/personal_portfolio/static/js/main.0a9bac68.js.map",
     "787.749b4a44.chunk.js.map": "/personal_portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b1d1f2c.css",
-    "static/js/main.f8143498.js"
+    "static/js/main.0a9bac68.js"
   ]
 }
