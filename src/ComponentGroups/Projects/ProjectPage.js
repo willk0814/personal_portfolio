@@ -88,6 +88,32 @@ export default function ProjectPage() {
             </li>
           </ul>
         </div>
+
+        <div>
+          <p
+            style={{ display: "inline", marginRight: "9px" }}
+            className="subTitle"
+          >
+            2048 in Python
+          </p>
+          <a href="https://github.com/willk0814/2048" target="_blank">
+            <button
+              className="submitMessageButton"
+              style={{ marginRight: "9px" }}
+            >
+              Repo
+            </button>
+          </a>
+          <ul className="subList">
+            <li className="subListItem">
+              A simple 2048 game to be played in a python shell
+            </li>
+            <li className="subListItem">
+              I did this project in Python and I am planning on adding a front
+              end using PyGame
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
