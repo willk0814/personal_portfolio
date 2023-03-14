@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import pdf from "../Assets/Koenig_Resume_2023.pdf";
+import pdf from "../Assets/KoenigResume2023.pdf";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
