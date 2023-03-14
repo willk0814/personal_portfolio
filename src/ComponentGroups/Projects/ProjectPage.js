@@ -84,7 +84,7 @@ export default function ProjectPage() {
               an array is sorted using different algorithms.
             </li>
             <li className="subListItem">
-              I did this project in JavaScript in React
+              I did this project in JavaScript using React
             </li>
           </ul>
         </div>

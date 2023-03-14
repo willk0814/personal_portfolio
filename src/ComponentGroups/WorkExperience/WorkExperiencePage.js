@@ -23,8 +23,11 @@ export default function WorkExperiencePage() {
             <li className="subListItem">
               Led the developement of a React Native device controller
               application capable of connecting with a research device, running
-              tests, and recieving and processing data to be used in the lab and
-              delivered to Fortune 500 client
+              tests, and recieving and processing data
+            </li>
+            <li className="subListItem">
+              Upon completion application was deployed on 6 iPads and delivered
+              to a Fortune 500 client
             </li>
             <li className="subListItem">
               App usage reduced data collection time by 33%
