@@ -53,9 +53,9 @@ export default function EducationPage() {
               Computing & Security, System Hardening, Computer Networks, Web App
               Security
             </li>
-            <li className="subListItem">
+            {/* <li className="subListItem">
               <p className="subSectTitle">Core Coursework GPA:</p>
-            </li>
+            </li> */}
           </ul>
         </div>
 
