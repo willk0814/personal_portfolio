@@ -71,6 +71,8 @@
     /* animation-duration: 300; */
 }
 
+
+
 .iconText {
     color: beige;
     padding-left: 25px;
@@ -78,6 +80,25 @@
 }
 
 /* End NavBar Styles */
+
+/* Text sizes */
+@media screen and (max-width: 768px){
+    .titleText {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-block: 0px;
+        padding-block: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .titleText {
+        font-size: 4rem;
+        margin-block: 0px;
+        font-weight: 300;
+        padding-block: 0px;
+    }
+}
 
 /* Outer Container for each page */
 .pageContainer {
@@ -116,12 +137,12 @@
 }
 
 /* Headers for each section */
-.titleText {
+/* .titleText {
     font-size: 4rem;
     margin-block: 0px;
     font-weight: 300;
     padding-block: 0px;
-}
+} */
 
 .subTitle {
     font-size: 1.5rem;
