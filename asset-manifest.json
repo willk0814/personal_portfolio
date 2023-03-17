@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personal_portfolio/static/css/main.0b1d1f2c.css",
+    "main.css": "/personal_portfolio/static/css/main.4c56b28e.css",
     "main.js": "/personal_portfolio/static/js/main.e758bf50.js",
     "static/js/787.749b4a44.chunk.js": "/personal_portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/KoenigResume2023.pdf": "/personal_portfolio/static/media/KoenigResume2023.a7f27ad3af2c5e714da3.pdf",
     "index.html": "/personal_portfolio/index.html",
-    "main.0b1d1f2c.css.map": "/personal_portfolio/static/css/main.0b1d1f2c.css.map",
+    "main.4c56b28e.css.map": "/personal_portfolio/static/css/main.4c56b28e.css.map",
     "main.e758bf50.js.map": "/personal_portfolio/static/js/main.e758bf50.js.map",
     "787.749b4a44.chunk.js.map": "/personal_portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b1d1f2c.css",
+    "static/css/main.4c56b28e.css",
     "static/js/main.e758bf50.js"
   ]
 }
