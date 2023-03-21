@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import pdf from "../Assets/KoenigResume2023.pdf";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -14,6 +14,9 @@ export default function Navbar() {
   const [porjectsUnderlined, setProjectsUnderlined] = useState(false);
   const [contactUnderlined, setContactUnderlined] = useState(false);
   const [hideNavbar, setHideNavbar] = useState(false);
+
+  const [showMobile, setShowMobile] = useState(false);
+  const [mobileNavClicked, setMobileNavClicked] = useState(false);
 
   const toggleEducationUnderlined = () => {
     setEducationUnderlined(!educationUnderlined);
@@ -27,15 +30,24 @@ export default function Navbar() {
   const toggleContactUnderlined = () => {
     setContactUnderlined(!contactUnderlined);
   };
+  const handleClick = () => {
+    setMobileNavClicked(!mobileNavClicked);
+  };
 
   // useEffect to detect resizes
   useEffect(() => {
     const handleResize = () => {
+      console.log("screen width: ", window.innerWidth);
       if (window.innerWidth <= 750) {
-        console.log("reached");
         setHideNavbar(true);
       } else {
         setHideNavbar(false);
+      }
+
+      if (window.innerWidth <= 900) {
+        setShowMobile(true);
+      } else {
+        setShowMobile(false);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -45,13 +57,14 @@ export default function Navbar() {
 
   return (
     <div className="navbarContainer">
-      {/* Top of Navbar */}
+      {/* Wide Screen Navbar */}
+
       <div>
         <Link to="home" smooth={true} duration={500}>
           <h2 className="navbarText">Will Koenig</h2>
         </Link>
       </div>
-      <ul className="navbarMenu">
+      <ul className="navbarMenu" style={{ display: showMobile ? "none" : "" }}>
         <li
           className="navbarMenuItem"
           onMouseEnter={toggleEducationUnderlined}
@@ -108,6 +121,60 @@ export default function Navbar() {
           ></div>
         </li> */}
       </ul>
+      {/* End of Wide Screen Navbar */}
+
+      {/* Mobile Navbar - FaBars */}
+      <div
+        className="mobileToggle"
+        style={{ display: !showMobile ? "none" : "" }}
+        onClick={handleClick}
+      >
+        {!mobileNavClicked ? <FaBars size={30} /> : <FaTimes size={30} />}
+      </div>
+
+      {/* Mobile Navbar - List of Links */}
+      <ul
+        className="mobileNavBar"
+        style={{ display: !mobileNavClicked ? "none" : "" }}
+      >
+        <li className="mobileNavItem">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="mobileNavItem">
+          <Link
+            onClick={handleClick}
+            to="education"
+            smooth={true}
+            duration={500}
+          >
+            Education
+          </Link>
+        </li>
+        <li className="mobileNavItem">
+          <Link
+            onClick={handleClick}
+            to="experience"
+            smooth={true}
+            duration={500}
+          >
+            Experience
+          </Link>
+        </li>
+        <li className="mobileNavItem">
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
+            Projects
+          </Link>
+        </li>
+      </ul>
+
+      {/* End of Mobile Navbar */}
 
       {/* Links on the side */}
       <div

@@ -1,13 +1,16 @@
 /* NavBar Styles */
 .navbarContainer {
-    width: 100%;
+    width: 92%;
     height: 80px;
     position: fixed;
+    left: 0;
     /* padding-inline-start: 5%; */
     /* padding-inline-end: 5%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 4%;
+    background-color: beige;
 }
 
 .navbarText {
@@ -19,11 +22,11 @@
 .navbarMenu {
     display: flex;
     list-style: none;
-    padding-right: 15vh;
+    /* padding-right: 15vw; */
 }
 
 .navbarMenuItem {
-    padding-inline: 4%;
+    padding-left: 2vw;
     cursor: pointer;
 }
 
@@ -35,6 +38,40 @@
     transition: 300ms;
 }
 
+/* Mobile NavBar */
+.mobileToggle {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.mobileNavBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: -2px;
+    background-color: beige;
+    margin-inline: 0px;
+    padding-inline: 0px;
+
+}
+
+.mobileNavItem {
+    list-style: none;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Key Links Side Bar */
 .keyLinksBar {
     position: fixed;
     display: flex;
