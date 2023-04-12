@@ -1,29 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "../PageStyling/PageStyles.css";
 
 export default function ProjectPage() {
-  const [appExpanded, setAppExpanded] = useState(false);
-  const [sortingExpanded, setSortingExpanded] = useState(false);
-  const [pythonGameExpanded, setPythonGameExapnded] = useState(false);
-  const [pathFindingExpanded, setPathFindingExpanded] = useState(false);
-
-  // const toggleApp = () => {
-  //   setAppExpanded(!appExpanded);
-  // };
-
-  // const toggleSorting = () => {
-  //   setSortingExpanded(!sortingExpanded);
-  // };
-
-  // const togglePythonGame = () => {
-  //   setPythonGameExapnded(!pythonGameExpanded);
-  // };
-
-  // const togglePathFinding = () => {
-  //   setPathFindingExpanded(!pathFindingExpanded);
-  // };
-
   return (
     <div name="projects" className="pageContainer">
       <div className="contentContainer">
@@ -38,6 +17,7 @@ export default function ProjectPage() {
           <a
             href="https://github.com/willk0814/DeviceControllerApp"
             target="_blank"
+            rel="noreferrer"
           >
             <button className="submitMessageButton">Repo</button>
           </a>
@@ -64,6 +44,7 @@ export default function ProjectPage() {
           <a
             href="https://github.com/willk0814/pathfinding_visualizer"
             target="_blank"
+            rel="noreferrer"
           >
             <button
               className="submitMessageButton"
@@ -75,6 +56,7 @@ export default function ProjectPage() {
           <a
             href="https://willk0814.github.io/pathfinding_visualizer/"
             target="_blank"
+            rel="noreferrer"
           >
             <button className="submitMessageButton">Site</button>
           </a>
@@ -99,6 +81,7 @@ export default function ProjectPage() {
           <a
             href="https://github.com/willk0814/sorting_visualizer"
             target="_blank"
+            rel="noreferrer"
           >
             <button
               className="submitMessageButton"
@@ -110,6 +93,7 @@ export default function ProjectPage() {
           <a
             href="https://willk0814.github.io/sorting_visualizer/"
             target="_blank"
+            rel="noreferrer"
           >
             <button className="submitMessageButton">Site</button>
           </a>
@@ -131,7 +115,11 @@ export default function ProjectPage() {
           >
             2048 in Python
           </p>
-          <a href="https://github.com/willk0814/2048" target="_blank">
+          <a
+            href="https://github.com/willk0814/2048"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button
               className="submitMessageButton"
               style={{ marginRight: "9px" }}

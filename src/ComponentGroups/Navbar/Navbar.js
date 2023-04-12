@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import pdf from "../Assets/KoenigResume2023.pdf";
 
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import "../PageStyling/PageStyles.css";
@@ -12,7 +12,7 @@ export default function Navbar() {
   const [educationUnderlined, setEducationUnderlined] = useState(false);
   const [experienceUnderlined, setExperienceUnderliend] = useState(false);
   const [porjectsUnderlined, setProjectsUnderlined] = useState(false);
-  const [contactUnderlined, setContactUnderlined] = useState(false);
+  // const [contactUnderlined, setContactUnderlined] = useState(false);
   const [hideNavbar, setHideNavbar] = useState(false);
 
   const [showMobile, setShowMobile] = useState(false);
@@ -35,9 +35,9 @@ export default function Navbar() {
   const toggleProjectsUnderlined = () => {
     setProjectsUnderlined(!porjectsUnderlined);
   };
-  const toggleContactUnderlined = () => {
-    setContactUnderlined(!contactUnderlined);
-  };
+  // const toggleContactUnderlined = () => {
+  //   setContactUnderlined(!contactUnderlined);
+  // };
 
   // mobile navbar toggle
   const handleClick = () => {
@@ -245,6 +245,7 @@ export default function Navbar() {
             <a
               href="https://github.com/willk0814"
               target="_blank"
+              rel="noreferrer"
               className="socialLink"
             >
               <div className="socialIcon">
@@ -258,6 +259,7 @@ export default function Navbar() {
             <a
               href="https://www.linkedin.com/in/will-koenig/"
               target="_blank"
+              rel="noreferrer"
               className="socialLink"
             >
               <div className="socialIcon">
