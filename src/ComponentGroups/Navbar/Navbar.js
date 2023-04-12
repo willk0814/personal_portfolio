@@ -17,7 +17,15 @@ export default function Navbar() {
 
   const [showMobile, setShowMobile] = useState(false);
   const [mobileNavClicked, setMobileNavClicked] = useState(false);
+  const [mobileHomeUnderlined, setMobileHomeUnderlined] = useState(false);
+  const [mobileEducationUnderlined, setMobileEducationUnderliend] =
+    useState(false);
+  const [mobileExperienceUnderlined, setMobileExperienceUnderliend] =
+    useState(false);
+  const [mobileProjectsUnderlined, setMobileProjectsUnderlined] =
+    useState(false);
 
+  // regular navbar underline toggles
   const toggleEducationUnderlined = () => {
     setEducationUnderlined(!educationUnderlined);
   };
@@ -30,8 +38,24 @@ export default function Navbar() {
   const toggleContactUnderlined = () => {
     setContactUnderlined(!contactUnderlined);
   };
+
+  // mobile navbar toggle
   const handleClick = () => {
     setMobileNavClicked(!mobileNavClicked);
+  };
+
+  // mobile navbar underlined toggles
+  const toggleMobileHomeUnderlined = () => {
+    setMobileHomeUnderlined(!mobileHomeUnderlined);
+  };
+  const toggleMobileEducationUnderlined = () => {
+    setMobileEducationUnderliend(!mobileEducationUnderlined);
+  };
+  const toggleMobileExperienceUnderlined = () => {
+    setMobileExperienceUnderliend(!mobileExperienceUnderlined);
+  };
+  const toggleMobileProjectsUnderlined = () => {
+    setMobileProjectsUnderlined(!mobileProjectsUnderlined);
   };
 
   // useEffect to detect resizes
@@ -123,7 +147,7 @@ export default function Navbar() {
       </ul>
       {/* End of Wide Screen Navbar */}
 
-      {/* Mobile Navbar - FaBars */}
+      {/* Mobile Navbar - FaBars Icon */}
       <div
         className="mobileToggle"
         style={{ display: !showMobile ? "none" : "" }}
@@ -137,12 +161,25 @@ export default function Navbar() {
         className="mobileNavBar"
         style={{ display: !mobileNavClicked ? "none" : "" }}
       >
-        <li className="mobileNavItem">
+        <li
+          className="mobileNavItem"
+          onMouseEnter={toggleMobileHomeUnderlined}
+          onMouseLeave={toggleMobileHomeUnderlined}
+        >
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
+          <div
+            className="underline"
+            style={{ width: mobileHomeUnderlined ? "100%" : "0%" }}
+          ></div>
         </li>
-        <li className="mobileNavItem">
+
+        <li
+          className="mobileNavItem"
+          onMouseEnter={toggleMobileEducationUnderlined}
+          onMouseLeave={toggleMobileEducationUnderlined}
+        >
           <Link
             onClick={handleClick}
             to="education"
@@ -151,8 +188,17 @@ export default function Navbar() {
           >
             Education
           </Link>
+          <div
+            className="underline"
+            style={{ width: mobileEducationUnderlined ? "100%" : "0%" }}
+          ></div>
         </li>
-        <li className="mobileNavItem">
+
+        <li
+          className="mobileNavItem"
+          onMouseEnter={toggleMobileExperienceUnderlined}
+          onMouseLeave={toggleMobileExperienceUnderlined}
+        >
           <Link
             onClick={handleClick}
             to="experience"
@@ -161,8 +207,17 @@ export default function Navbar() {
           >
             Experience
           </Link>
+          <div
+            className="underline"
+            style={{ width: mobileExperienceUnderlined ? "100%" : "0%" }}
+          ></div>
         </li>
-        <li className="mobileNavItem">
+
+        <li
+          className="mobileNavItem"
+          onMouseEnter={toggleMobileProjectsUnderlined}
+          onMouseLeave={toggleMobileProjectsUnderlined}
+        >
           <Link
             onClick={handleClick}
             to="projects"
@@ -171,6 +226,10 @@ export default function Navbar() {
           >
             Projects
           </Link>
+          <div
+            className="underline"
+            style={{ width: mobileProjectsUnderlined ? "100%" : "0%" }}
+          ></div>
         </li>
       </ul>
 

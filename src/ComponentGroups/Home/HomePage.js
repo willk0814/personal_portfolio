@@ -13,7 +13,7 @@ export default function HomePage() {
             color: "grey",
           }}
         >
-          and I am a Software Engineer
+          I am a Full Stack Software Engineer
         </h1>
         <p>
           I am a full stack software engineer who is interested in learning and

@@ -8,21 +8,21 @@ export default function ProjectPage() {
   const [pythonGameExpanded, setPythonGameExapnded] = useState(false);
   const [pathFindingExpanded, setPathFindingExpanded] = useState(false);
 
-  const toggleApp = () => {
-    setAppExpanded(!appExpanded);
-  };
+  // const toggleApp = () => {
+  //   setAppExpanded(!appExpanded);
+  // };
 
-  const toggleSorting = () => {
-    setSortingExpanded(!sortingExpanded);
-  };
+  // const toggleSorting = () => {
+  //   setSortingExpanded(!sortingExpanded);
+  // };
 
-  const togglePythonGame = () => {
-    setPythonGameExapnded(!pythonGameExpanded);
-  };
+  // const togglePythonGame = () => {
+  //   setPythonGameExapnded(!pythonGameExpanded);
+  // };
 
-  const togglePathFinding = () => {
-    setPathFindingExpanded(!pathFindingExpanded);
-  };
+  // const togglePathFinding = () => {
+  //   setPathFindingExpanded(!pathFindingExpanded);
+  // };
 
   return (
     <div name="projects" className="pageContainer">
@@ -50,6 +50,41 @@ export default function ProjectPage() {
             </li>
             <li className="subListItem">
               This application was developed in JavaScript using React Native
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            style={{ display: "inline", marginRight: "9px" }}
+            className="subTitle"
+          >
+            PathFinding Visualizer
+          </p>
+          <a
+            href="https://github.com/willk0814/pathfinding_visualizer"
+            target="_blank"
+          >
+            <button
+              className="submitMessageButton"
+              style={{ marginRight: "9px" }}
+            >
+              Repo
+            </button>
+          </a>
+          <a
+            href="https://willk0814.github.io/pathfinding_visualizer/"
+            target="_blank"
+          >
+            <button className="submitMessageButton">Site</button>
+          </a>
+          <ul className="subList">
+            <li className="subListItem">
+              A website that I developed to demonstrate the paths taken by
+              different algorithms as they explore a grid
+            </li>
+            <li className="subListItem">
+              I did this project in JavaScript using React
             </li>
           </ul>
         </div>
