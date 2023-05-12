@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../PageStyling/PageStyles.css";
+import UD from "../Assets/UD.png";
+import Stevens from "../Assets/stevens.png";
 
 // Programming Language Icons
 import { SiPython, SiJupyter, SiReact } from "react-icons/si";
@@ -33,9 +35,33 @@ export default function EducationPage() {
 
         {/* Non Expandable Layout - Education */}
         <div>
-          <p className="subTitle">
-            B.S. in CS concentrated in AI w/ minor in CyberSecurity
-          </p>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            {/* <img src={Stevens} style={{ width: "60px", height: "auto" }} /> */}
+            <p className="subTitle">Masters of Science in Computer Science</p>
+          </div>
+          <ul className="subList">
+            <li className="subListItem">
+              <p className="subSectTitle">Expected:</p> December 2024
+            </li>
+            <li className="subListItem">
+              <p className="subSectTitle">
+                In Progress / Completed Coursework:
+              </p>{" "}
+              Algorithms
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            {/* <img
+              src={UD}
+              style={{ width: "85px", height: "auto", marginTop: "1vh" }}
+            /> */}
+            <p className="subTitle">
+              B.S. in CS concentrated in ai w/ minor in CyberSecurity
+            </p>
+          </div>
           <ul className="subList">
             <li className="subListItem">
               <p className="subSectTitle">CS Coursework:</p> OOP, Data

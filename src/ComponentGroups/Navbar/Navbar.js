@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import pdf from "../Assets/KoenigResume2023.pdf";
+import pdf from "../Assets/KoenigResume.pdf";
 
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 // import { HiOutlineMail } from "react-icons/hi";
@@ -269,11 +269,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="socialListIcon">
-            <a
-              href={pdf}
-              download="Koenig_Resume_2023.pdf"
-              className="socialLink"
-            >
+            <a href={pdf} download="KoenigResume.pdf" className="socialLink">
               <div className="socialIcon">
                 <p className="iconText">Resume</p>
                 <BsFillPersonLinesFill size={45} color="beige" />
