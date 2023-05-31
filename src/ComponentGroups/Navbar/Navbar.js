@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import pdf from "../Assets/KoenigResume.pdf";
 
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+// import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import "./Navbar.css";
@@ -12,7 +12,7 @@ export default function Navbar() {
   const [educationUnderlined, setEducationUnderlined] = useState(false);
   const [experienceUnderlined, setExperienceUnderliend] = useState(false);
   const [porjectsUnderlined, setProjectsUnderlined] = useState(false);
-  const [contactUnderlined, setContactUnderlined] = useState(false);
+  // const [contactUnderlined, setContactUnderlined] = useState(false);
   const [hideNavbar, setHideNavbar] = useState(false);
 
   const [showMobile, setShowMobile] = useState(false);
@@ -35,9 +35,9 @@ export default function Navbar() {
   const toggleProjectsUnderlined = () => {
     setProjectsUnderlined(!porjectsUnderlined);
   };
-  const toggleContactUnderlined = () => {
-    setContactUnderlined(!contactUnderlined);
-  };
+  // const toggleContactUnderlined = () => {
+  //   setContactUnderlined(!contactUnderlined);
+  // };
 
   // mobile navbar toggle
   const handleClick = () => {
@@ -131,7 +131,7 @@ export default function Navbar() {
           ></div>
         </li>
 
-        <li
+        {/* <li
           className="navbarMenuItem"
           onMouseEnter={toggleContactUnderlined}
           onMouseLeave={toggleContactUnderlined}
@@ -143,7 +143,7 @@ export default function Navbar() {
             className="underline"
             style={{ width: contactUnderlined ? "100%" : "0%" }}
           ></div>
-        </li>
+        </li> */}
       </ul>
       {/* End of Wide Screen Navbar */}
 
@@ -276,14 +276,14 @@ export default function Navbar() {
               </div>
             </a>
           </li>
-          <li className="socialListIcon">
+          {/* <li className="socialListIcon">
             <Link to="contact" smooth={true} duration={500}>
               <div className="socialIcon">
                 <p className="iconText">Contact Me</p>
                 <HiOutlineMail size={45} color="beige" />
               </div>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
