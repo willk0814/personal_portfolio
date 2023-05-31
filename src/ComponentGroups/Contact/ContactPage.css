@@ -1,0 +1,28 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitMessageButton{
+    margin-top: 3vh;
+    padding: 4px 4px;
+    align-self: center;
+    width: 75px;
+    height: 30px;
+    font-size: medium;
+    color: black;
+    background-color: beige;
+    border-radius: 10px;
+    /* border: 1px solid black 10px; */
+    transition: ease-in-out 0.5s;
+}
+
+.submitMessageButton:hover{
+    /* width: 100px;
+    height: 37.5px; */
+    scale: 1.25;
+    background-color: black;
+    color: beige;
+    cursor: pointer;
+    
+}

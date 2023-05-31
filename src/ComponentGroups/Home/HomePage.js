@@ -1,5 +1,5 @@
 import React from "react";
-import "../PageStyling/PageStyles.css";
+import "../RepeatedPageStyles/PageStyles.css";
 
 export default function HomePage() {
   return (
@@ -16,10 +16,12 @@ export default function HomePage() {
           I am a Full Stack Software Engineer
         </h1>
         <p>
-          I am a full stack software engineer who is interested in learning and
-          building new things all the time. Scroll through this site in order to
-          read about my education and work experience, as well as view some of
-          my projects.
+          A full stack Python and JavaScript engineer, with experience in both
+          front-end and back-end development. Created dynamic applications with
+          React Native and developed APIs using Node. I am passionate about
+          delivering high-quality projects that bring real value to their end
+          users. I’ve worked in team environments following Agile development
+          methodologies.
         </p>
       </div>
     </div>

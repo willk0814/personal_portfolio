@@ -1,0 +1,66 @@
+/* Responsive Title Text sizes */
+@media screen and (max-width: 768px){
+    .titleText {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-block: 0px;
+        padding-block: 0px;
+        margin-inline-end: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .titleText {
+        font-size: 4rem;
+        margin-block: 0px;
+        font-weight: 300;
+        padding-block: 0px;
+        margin-inline-end: 5px;
+    }
+}
+
+/* Outer Container for each page */
+.pageContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+/* Inner Container for each pages content */
+.contentContainer {
+    max-width: 1200px;
+    padding: 5%;
+    margin-left: 5% ;
+    margin-right: 5%;
+}
+
+/* Repeated Content List Styles */
+.subList {
+    list-style-type: none;
+    margin-left: -20px;
+    margin-block: 0px;
+}
+
+.subListItem {
+    padding-block: 3px;
+}
+
+.subSectTitle {
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.subTitle {
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 3vh;
+    margin-bottom: 0px;
+}
+/* End Repeated Content List Styles */
+

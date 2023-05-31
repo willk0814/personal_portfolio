@@ -1,33 +1,12 @@
-import React, { useState } from "react";
-import "../PageStyling/PageStyles.css";
+import React from "react";
+import "../RepeatedPageStyles/PageStyles.css";
 import UD from "../Assets/UD.png";
 import Stevens from "../Assets/stevens.png";
 
 // Programming Language Icons
-import { SiPython, SiJupyter, SiReact } from "react-icons/si";
+// import { SiPython, SiJupyter, SiReact } from "react-icons/si";
 
 export default function EducationPage() {
-  const [majorExpanded, setMajorExpanded] = useState(false);
-  const [minorExpanded, setMinorExpanded] = useState(false);
-  const [extraCurricularExpanded, setExtraCurricularExpanded] = useState(false);
-  const [skillsExpanded, setSkillsExpanded] = useState(false);
-
-  const toggleMajor = () => {
-    setMajorExpanded(!majorExpanded);
-  };
-
-  const toggleMinor = () => {
-    setMinorExpanded(!minorExpanded);
-  };
-
-  const toggleExtraCurricular = () => {
-    setExtraCurricularExpanded(!extraCurricularExpanded);
-  };
-
-  const toggleSkills = () => {
-    setSkillsExpanded(!skillsExpanded);
-  };
-
   return (
     <div name="education" className="pageContainer">
       <div className="contentContainer">
@@ -59,7 +38,7 @@ export default function EducationPage() {
               style={{ width: "85px", height: "auto", marginTop: "1vh" }}
             /> */}
             <p className="subTitle">
-              B.S. in CS concentrated in ai w/ minor in CyberSecurity
+              B.S. in CS concentrated in AI w/ minor in CyberSecurity
             </p>
           </div>
           <ul className="subList">

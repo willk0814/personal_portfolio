@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import "../PageStyling/PageStyles.css";
+import "../RepeatedPageStyles/PageStyles.css";
+import "./ProjectPage.css";
 
 export default function ProjectPage() {
   const [viewJS, setViewJS] = useState(true);

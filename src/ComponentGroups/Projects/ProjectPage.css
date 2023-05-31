@@ -1,0 +1,65 @@
+.projectSelectionRowContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.projectTypeButton {
+    font-size: medium;
+    background-color: beige;
+    margin-inline-end: 5px;
+    border-radius: 10px;
+    padding: 4px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.projectTypeButton:hover {
+    scale: 1.1;
+    color: beige;
+    background-color: black;
+}
+
+.projectTypeButton_selected {
+    font-size: medium;
+    background-color: black;
+    color: beige;
+    margin-inline-end: 5px;
+    border-radius: 10px;
+    padding: 4px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.projectTypeButton_selected:hover {
+    scale: 1.1;
+    color: beige;
+    background-color: black;
+}
+
+.projectExampleContainer {
+    width: 80vw;
+    height: 50vh;
+
+}
+
+.submitMessageButton{
+    margin-top: 3vh;
+    padding: 4px 4px;
+    align-self: center;
+    width: 75px;
+    height: 30px;
+    font-size: medium;
+    color: black;
+    background-color: beige;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.submitMessageButton:hover{
+    scale: 1.25;
+    background-color: black;
+    color: beige;
+    cursor: pointer;
+    
+}

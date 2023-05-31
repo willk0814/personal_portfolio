@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import nodemailer from "nodemailer";
-import "../PageStyling/PageStyles.css";
+import "../RepeatedPageStyles/PageStyles.css";
+import "./ContactPage.css";
 
 export default function ContactPage() {
   const [name, setName] = useState("");

@@ -1,0 +1,116 @@
+/* NavBar Styles */
+.navbarContainer {
+    width: 92%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    /* padding-inline-start: 5%; */
+    /* padding-inline-end: 5%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 4%;
+    background-color: beige;
+}
+
+.navbarText {
+    font-weight: 300;
+    /* padding-left: 10px; */
+    cursor: pointer;
+}
+
+.navbarMenu {
+    display: flex;
+    list-style: none;
+    /* padding-right: 15vw; */
+}
+
+.navbarMenuItem {
+    padding-left: 2vw;
+    cursor: pointer;
+}
+
+.underline {
+    width: 0%;
+    position: relative;
+    background-color: black;
+    height: 2px;
+    transition: 300ms;
+}
+
+/* Mobile NavBar */
+.mobileToggle {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.mobileNavBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: -2px;
+    background-color: beige;
+    margin-inline: 0px;
+    padding-inline: 0px;
+
+}
+
+.mobileNavItem {
+    list-style: none;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Key Links Side Bar */
+.keyLinksBar {
+    position: fixed;
+    display: flex;
+    top: 35%;
+    left: 0%;
+}
+
+.socialListIcon {
+    list-style: none;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.socialIcon {
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    margin-left: -185px;
+    transition-duration: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+.socialLink{
+    text-decoration: none;
+}
+
+.socialIcon:hover{
+    margin-left: -55px;
+    transition-duration: 300ms;
+    /* animation-duration: 300; */
+}
+
+.iconText {
+    color: beige;
+    padding-left: 25px;
+    font-size: 1.25rem;
+}
+/* End NavBar Styles */

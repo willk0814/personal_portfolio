@@ -1,18 +1,7 @@
-import React, { useState } from "react";
-import "../PageStyling/PageStyles.css";
+import React from "react";
+import "../RepeatedPageStyles/PageStyles.css";
 
 export default function WorkExperiencePage() {
-  const [viinkoExpanded, setViinkoExpanded] = useState(false);
-  const [sparksExpanded, setSparksExpanded] = useState(false);
-
-  const toggleSparks = () => {
-    setSparksExpanded(!sparksExpanded);
-  };
-
-  const toggleViinko = () => {
-    setViinkoExpanded(!viinkoExpanded);
-  };
-
   return (
     <div name="experience" className="pageContainer">
       <div className="contentContainer">

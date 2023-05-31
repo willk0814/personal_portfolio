@@ -13,7 +13,7 @@ function App() {
       <EducationPage />
       <WorkExperiencePage />
       <ProjectsPage />
-      {/* <ContactPage /> */}
+      <ContactPage />
     </div>
   );
 }
